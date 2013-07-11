@@ -1,14 +1,13 @@
 package com.m2mci.mqttKafkaBridge;
 
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import kafka.javaapi.producer.Producer;
 import kafka.javaapi.producer.ProducerData;
 import kafka.message.Message;
 import kafka.producer.ProducerConfig;
 
+import org.apache.log4j.Logger;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.IMqttToken;
 import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
@@ -50,7 +49,7 @@ public class Bridge implements MqttCallback {
 
 	@Override
 	public void connectionLost(Throwable cause) {
-		logger.log(Level.WARNING, "Lost connection to MQTT server", cause);
+		logger.warn("Lost connection to MQTT server", cause);
 		while (true) {
 			try {
 				logger.info("Attempting to reconnect to MQTT server");
@@ -58,7 +57,7 @@ public class Bridge implements MqttCallback {
 				logger.info("Reconnected to MQTT server, resuming");
 				return;
 			} catch (MqttException e) {
-				logger.log(Level.WARNING, "Reconnect failed, retrying in 10 seconds", e);
+				logger.warn("Reconnect failed, retrying in 10 seconds", e);
 			}
 			try {
 				Thread.sleep(10000);
