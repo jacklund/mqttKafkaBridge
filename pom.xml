@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.m2mci</groupId>
 	<artifactId>mqttKafkaBridge</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0</version>
 
 	<!-- This should point to the location of the remote git repository modify 
 		this as necessary. This is needed for doing releases -->
