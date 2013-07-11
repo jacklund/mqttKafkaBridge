@@ -93,32 +93,7 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.6.2.201302030002</version>
 			</plugin>
-			<!-- Jar plugin - sets up the manifest entries -->
-<!-- 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<archive>
-						<index>true</index>
-						<manifest>
-							<main-class>com.m2mci.mqttKafkaBridge.Bridge</main-class>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib</classpathPrefix>
-						</manifest>
-					</archive>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id> this is used for inheritance merges
-						<phase>package</phase> bind to the packaging phase
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
- -->			<plugin>
+			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<archive>
