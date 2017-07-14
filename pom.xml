@@ -10,9 +10,17 @@
 		this as necessary. This is needed for doing releases -->
 	<scm>
 		<developerConnection>
-            scm:git:https://bitbucket.org/m2mconnections/mqttKafkaBridge.git
-        </developerConnection>
+			scm:git:https://bitbucket.org/m2mconnections/mqttKafkaBridge.git
+		</developerConnection>
 	</scm>
+
+	<repositories>
+		<!-- Repository for the specified MQTT's version code base -->
+		<repository>
+			<id>Eclipse Paho Repo</id>
+			<url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
+		</repository>
+	</repositories>
 
 	<!-- Dependencies -->
 	<dependencies>
