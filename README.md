@@ -2,6 +2,8 @@
 
 Bridge which consumes MQTT messages and republishes them on Kafka on the same topic.
 
+**NOTE**: I am in the process of moving all my repositories to Codeberg. You can find this repo at https://codeberg.org/jacklund/mqttKafkaBridge.
+
 ## Usage
 
     $ java -jar mqttKafkaBridge.jar [options...]
