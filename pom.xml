@@ -31,12 +31,12 @@
 		<repository>
 			<id>apache-kafka</id>
 			<name>Apache Kafka Repo</name>
-			<url>http://clojars.org/repo/</url>
+			<url>https://clojars.org/repo/</url>
 		</repository>
 		<repository>
 			<id>mvnrepository</id>
 			<name>mvnrepository</name>
-			<url>http://www.mvnrepository.com</url>
+			<url>https://www.mvnrepository.com</url>
 		</repository>
 	</repositories>
 
@@ -140,12 +140,12 @@
 		<snapshotRepository>
 			<id>m2m-snapshot</id>
 			<name>m2m-artifactory1-snapshots</name>
-			<url>http://24.14.16.189:8081/artifactory/libs-snapshot-local</url>
+			<url>https://24.14.16.189:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 		<repository>
 			<id>m2m-release</id>
 			<name>m2m-artifactory1-releases</name>
-			<url>http://24.14.16.189:8081/artifactory/libs-release-local</url>
+			<url>https://24.14.16.189:8081/artifactory/libs-release-local</url>
 		</repository>
 	</distributionManagement>
 
